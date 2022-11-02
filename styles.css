@@ -205,6 +205,7 @@ p {
   align-items: center;
   height: 24px;
   width: 24px;
+  min-width: 24px;
   margin-right: 10px;
   border: solid 2px var(--grey);
   border-radius: 50%;
@@ -453,10 +454,18 @@ a.link_accomondation_plus {
 @media only screen and (max-width: 768px) {
   body {
     background-color: lightpink;
+    margin: 0 20px;
   }
 
   .navbar {
     flex-direction: column;
+    width: 100%;
+    padding: 30px 0 40px 0;
+  }
+
+  .navbar a {
+    padding: 0 0 20px 0;
+    border-bottom: solid 2px var(--grey);
   }
 
   .navbar a:hover {
@@ -464,7 +473,23 @@ a.link_accomondation_plus {
     border-top: none;
   }
 
+  .nav_elements {
+    display: flex;
+    width: 100%;
+  }
+
+  a.nav_link {
+    margin: 0 -20px;
+    width: 100%;
+    text-align: center;
+  }
+
   .img_logo_nav {
     margin: 0 0 50px 0;
+  }
+
+  .search_bar {
+    width: 100%;
+    max-width: 446px;
   }
 }
