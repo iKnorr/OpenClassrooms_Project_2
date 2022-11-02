@@ -20,7 +20,7 @@
         />
         <section>
           <a class="nav_link" href="#accomondation">Hébergements</a>
-          <a class="nav_link" href="#">Activités</a>
+          <a class="nav_link" href="#section_activities">Activités</a>
         </section>
       </nav>
       <section class="section_heading">
@@ -38,24 +38,26 @@
           <button class="btn_form btn_search">Rechercher</button>
         </form>
       </section>
-      <section class="filter">
+      <section class="filter_container">
         <h2 class="heading_filter">Filtres</h2>
-        <a href="#" class="filter_link">
-          <i class="icon_link fa-solid fa-money-bill-wave"></i>
-          <h2 class="title_link">Économique</h2>
-        </a>
-        <a href="#" class="filter_link">
-          <i class="icon_link fa-solid fa-person"></i>
-          <h2 class="title_link">Familial</h2>
-        </a>
-        <a href="#" class="filter_link">
-          <i class="icon_link fa-solid fa-heart"></i>
-          <h2 class="title_link">Romantique</h2>
-        </a>
-        <a href="#" class="filter_link">
-          <i class="icon_link fa-solid fa-dog"></i>
-          <h2 class="title_link">Animaux autorisés</h2>
-        </a>
+        <div class="filter">
+          <a href="#" class="filter_link">
+            <i class="icon_link fa-solid fa-money-bill-wave"></i>
+            <h2 class="title_link">Économique</h2>
+          </a>
+          <a href="#" class="filter_link">
+            <i class="icon_link fa-solid fa-person"></i>
+            <h2 class="title_link">Familial</h2>
+          </a>
+          <a href="#" class="filter_link">
+            <i class="icon_link fa-solid fa-heart"></i>
+            <h2 class="title_link">Romantique</h2>
+          </a>
+          <a href="#" class="filter_link">
+            <i class="icon_link fa-solid fa-dog"></i>
+            <h2 class="title_link">Animaux autorisés</h2>
+          </a>
+        </div>
       </section>
     </header>
     <section class="info_accomondation">
@@ -67,11 +69,12 @@
     <main id="main_container">
       <section class="main_cards_ui" id="accomondation">
         <h2 class="heading_accomondation">Hébergements à Marseille</h2>
+        <a href="#">
         <div class="grid_cards">
           <div class="card">
             <img
               src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-              alt="img_hebergements_marcus_loke"
+              alt="img_auberge_la_canebière"
             />
             <div class="container">
               <h3 class="heading_card">Auberge La Canebière</h3>
@@ -85,10 +88,12 @@
               </div>
             </div>
           </div>
+        </a>
+        <a href="#">
           <div class="card">
             <img
               src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt="img_hebergements_marcus_loke"
+              alt="img_hotel_du_port"
             />
             <div class="container">
               <h3 class="heading_card">Hôtel du port</h3>
@@ -102,10 +107,12 @@
               </div>
             </div>
           </div>
+        </a>
+        <a href="#">
           <div class="card">
             <img
               src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-              alt="img_hebergements_marcus_loke"
+              alt="img_hotel_les_mouettes"
             />
             <div class="container">
               <h3 class="heading_card">Hôtel Les mouettes</h3>
@@ -119,10 +126,12 @@
               </div>
             </div>
           </div>
+        </a>
+        <a href="#">
           <div class="card">
             <img
               src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-              alt="img_hebergements_marcus_loke"
+              alt="img_hotel_de_la_mer"
             />
             <div class="container">
               <h3 class="heading_card">Hôtel de la mer</h3>
@@ -136,10 +145,12 @@
               </div>
             </div>
           </div>
+        </a>
+        <a href="#">
           <div class="card">
             <img
               src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-              alt="img_hebergements_marcus_loke"
+              alt="img_auberge_le_panier"
             />
             <div class="container">
               <h3 class="heading_card">Auberge Le Panier</h3>
@@ -153,10 +164,12 @@
               </div>
             </div>
           </div>
+        </a>
+        <a href="#">
           <div class="card">
             <img
               src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-              alt="img_hebergements_marcus_loke"
+              alt="img_hotel_chez_amina"
             />
             <div class="container">
               <h3 class="heading_card">Hôtel Chez Amina</h3>
@@ -170,19 +183,23 @@
               </div>
             </div>
           </div>
+        </a>
           <a class="link_accomondation_plus" href="#">Afficher Plus</a>
         </div>
       </section>
       <section id="most_popular" class="main_cards_ui">
         <div class="header_most_pop">
           <h2 class="heading_most_pop">Hébergements à Marseille</h2>
-          <i class="fa-solid fa-chart-line"></i>
+          <a href="#">
+            <i class="fa-solid fa-chart-line"></i>
+          </a>
         </div>
         <div class="cards_most_pop">
+          <a href="#" class="link_most_pop">
           <div class="card" id="card_most_popular">
             <img
               src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-              alt="img_hebergements_marcus_loke"
+              alt="img_hotel_le_soleil_du_matin"
             />
             <div class="container">
               <div class="heading_card_most_pop">
@@ -198,10 +215,12 @@
               </div>
             </div>
           </div>
+        </a>
+        <a href="#" class="link_most_pop">
           <div class="card" id="card_most_popular">
             <img
               src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-              alt="img_hebergements_marcus_loke"
+              alt="img_chambres_dhotes_au_coeur"
             />
             <div class="container">
               <div class="heading_card_most_pop">
@@ -217,10 +236,12 @@
               </div>
             </div>
           </div>
+        </a>
+        <a href="#" class="link_most_pop">
           <div class="card" id="card_most_popular">
             <img
               src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-              alt="img_hebergements_marcus_loke"
+              alt="img_hotel_bleu_et_blanc"
             />
             <div class="container">
               <div class="heading_card_most_pop">
@@ -236,9 +257,51 @@
               </div>
             </div>
           </div>
+        </a>
         </div>
       </section>
     </main>
+    <section id="section_activities">
+      <h2 class="heading_activities">Activités à Marseille</h2>
+      <div class="activities">
+        <div class="card" id="card_activities">
+          <img
+            src="/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            alt="img_vieux_port"
+          />
+          <div class="container_activities">
+            <h3 class="heading_card">Vieux-Port</h3>
+          </div>
+        </div>
+        <div class="card" id="card_activities">
+          <img
+            src="/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+            alt="img_fort_de_pomegues"
+          />
+          <div class="container_activities">
+            <h3 class="heading_card">Fort de Pomègues</h3>
+          </div>
+        </div>
+        <div class="card" id="card_activities">
+          <img
+            src="/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+            alt="img_parc_natinal_des_calanques"
+          />
+          <div class="container_activities">
+            <h3 class="heading_card">Parc national des Calanques</h3>
+          </div>
+        </div>
+        <div class="card" id="card_activities">
+          <img
+            src="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            alt="img_notre_dame_de_la_garde"
+          />
+          <div class="container_activities">
+            <h3 class="heading_card">Notre-Dame-de-la-Garde</h3>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer id="footer">
       <div class="about">
         <h3>À propos</h3>
