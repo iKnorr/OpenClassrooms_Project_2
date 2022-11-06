@@ -253,7 +253,7 @@ a {
 }
 
 .container {
-  padding: 10px 10px 5px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .heading_card {
@@ -281,7 +281,7 @@ a {
 }
 
 .heading_accomondation {
-  margin-bottom: 20px;
+  margin: 10px 0 20px 0;
 }
 
 a.link_accomondation_plus {
@@ -291,10 +291,13 @@ a.link_accomondation_plus {
 
 .grid_cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 30px;
+
+  /* grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  grid-row-gap: 30px; */
 }
 
 /* MOST POPULAR SECTION */
@@ -358,9 +361,12 @@ a.link_accomondation_plus {
   grid-gap: 20px;
 }
 
+.link_activities {
+  width: 100%;
+}
+
 #card_activities {
-  height: auto;
-  width: 302px;
+  min-height: 465px;
   padding: 0;
 }
 
@@ -421,12 +427,8 @@ a.link_accomondation_plus {
     grid-gap: 20px;
   }
 
-  #card_most_popular {
-    width: 100%;
-  }
-
   #card_activities {
-    width: 182px;
+    min-height: 290px;
   }
 
   #card_activities img {
