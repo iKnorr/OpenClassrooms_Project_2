@@ -14,6 +14,7 @@
 }
 
 html {
+  margin: 0 auto;
   max-width: 1400px;
   scroll-behavior: smooth;
 }
@@ -145,7 +146,7 @@ a {
 
 /* FILTER SECTION*/
 
-.filter_container {
+#filter_container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -176,6 +177,7 @@ a {
 .filter a:hover {
   background-color: var(--blue-clear);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-color: var(--grey);
 }
 
 .filter_link h2 {
@@ -293,11 +295,6 @@ a.link_accomondation_plus {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
   grid-gap: 30px;
-
-  /* grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px; */
 }
 
 /* MOST POPULAR SECTION */
@@ -306,20 +303,20 @@ a.link_accomondation_plus {
   width: 30%;
 }
 
-.header_most_pop {
+#header_most_pop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.header_most_pop .fa-chart-line {
+#header_most_pop .fa-chart-line {
   color: var(--blue);
   width: 18px;
   transition: 0.3s;
 }
 
-.header_most_pop .fa-chart-line:hover {
+#header_most_pop .fa-chart-line:hover {
   transform: scale(1.1);
 }
 
@@ -492,7 +489,7 @@ a.link_accomondation_plus {
     display: none;
   }
 
-  .filter_container {
+  #filter_container {
     display: block;
   }
 
