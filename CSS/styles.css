@@ -11,17 +11,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1520px;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0 40px;
-  height: 100vh;
   font-family: "Raleway", sans-serif;
 }
 
@@ -62,11 +62,12 @@ a {
 
 .navbar a {
   padding: 38px 48px;
+  border-top: solid 2px var(--white);
 }
 
 .navbar a:hover {
   color: var(--blue);
-  border-top: solid 2px var(--blue);
+  border-top-color: var(--blue);
 }
 
 /* HEADING */
@@ -115,18 +116,21 @@ a {
   color: var(--black);
 }
 
-.btn_location {
+.icon_location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--grey);
   border-radius: 15px 0px 0px 15px;
   border: none;
   font-size: 18px;
 }
 
-.btn_location:hover {
+.icon_location:hover {
   background-color: var(--black);
 }
 
-.btn_location:hover .fa-location-dot {
+.icon_location:hover .fa-location-dot {
   color: var(--white);
 }
 
@@ -279,7 +283,6 @@ a {
 
 #accomondation {
   width: 60%;
-  margin-right: 40px;
 }
 
 .heading_accomondation {
@@ -300,7 +303,7 @@ a.link_accomondation_plus {
 /* MOST POPULAR SECTION */
 
 #most_popular {
-  width: 30%;
+  width: 35%;
 }
 
 #header_most_pop {
@@ -320,18 +323,18 @@ a.link_accomondation_plus {
   transform: scale(1.1);
 }
 
-#card_most_popular .container {
+.card_most_popular .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#card_most_popular {
+.card_most_popular {
   display: flex;
-  height: 144px;
+  height: 160px;
 }
 
-#card_most_popular img {
+.card_most_popular img {
   height: auto;
   width: 40%;
   border-radius: 15px 0 0 15px;
@@ -362,15 +365,22 @@ a.link_accomondation_plus {
   width: 100%;
 }
 
-#card_activities {
+.card_activities {
+  min-height: 465px;
+  padding: 0;
+}
+
+.card_activities img {
+  height: 389px;
+}
+/* #card_activities {
   min-height: 465px;
   padding: 0;
 }
 
 #card_activities img {
   height: 389px;
-}
-
+} */
 .container_activities {
   padding: 15px;
 }
@@ -411,12 +421,12 @@ a.link_accomondation_plus {
   }
 
   #accomondation {
-    width: 90%;
-    margin: 0 auto 40px auto;
+    width: 100%;
+    margin: 0 0 40px 0;
   }
 
   #most_popular {
-    width: 90%;
+    width: 100%;
   }
 
   .cards_most_pop {
@@ -424,11 +434,11 @@ a.link_accomondation_plus {
     grid-gap: 20px;
   }
 
-  #card_activities {
+  .card_activities {
     min-height: 290px;
   }
 
-  #card_activities img {
+  .card_activities img {
     height: 210px;
   }
 
@@ -452,12 +462,12 @@ a.link_accomondation_plus {
 
   .navbar a {
     padding: 0 0 20px 0;
+    border-top: none;
     border-bottom: solid 2px var(--grey);
   }
 
   .navbar a:hover {
-    border-bottom: solid 2px var(--blue);
-    border-top: none;
+    border-bottom-color: var(--blue);
   }
 
   .nav_elements {
@@ -546,7 +556,7 @@ a.link_accomondation_plus {
   }
   #footer {
     flex-direction: column;
-    margin: 70px -20px;
+    margin: 70px -20px 0 -20px;
     grid-row-gap: 30px;
     padding: 50px;
   }
@@ -558,7 +568,7 @@ a.link_accomondation_plus {
     border-radius: 0;
   }
 
-  #card_most_popular {
+  .card_most_popular {
     width: unset;
   }
 
@@ -570,8 +580,20 @@ a.link_accomondation_plus {
     flex-direction: column;
   }
 
-  #card_activities {
+  .card_activities {
     width: unset;
+  }
+
+  .card_activities {
+    min-height: 190px;
+  }
+
+  .card_activities img {
+    height: 134px;
+  }
+
+  .card.card_activities img {
+    height: 134;
   }
 
   .section_activities {
